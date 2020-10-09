@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://password-:password1!@school.9wqbr.mongodb.net/budget?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
